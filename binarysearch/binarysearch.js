@@ -1,5 +1,3 @@
-const values = [21,22,23,25,27,28,29,31,32,34,35];
-
 export function binarySearch(searchFor, values) {
     let found = false;
     let index = -1;
@@ -26,3 +24,5 @@ export function binarySearch(searchFor, values) {
 
     return { found, index, iterations };
 }
+
+const values = [21,22,23,25,27,28,29,31,32,34,35];
