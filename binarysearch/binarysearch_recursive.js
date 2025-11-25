@@ -8,7 +8,7 @@ export default function binarySearchRecursive(search, values, start, end, iterat
             return {found, index, iterations}
         }
 
-    const middle = start + Math.floor(( end - start) / 2);
+    const middle = Math.floor(( start + end ) / 2);
     if (values[middle] === search)
         {
             found = true;
@@ -23,8 +23,3 @@ export default function binarySearchRecursive(search, values, start, end, iterat
         }
     return {found, index, iterations}
 }
-
-const values = [21,22,23,25,27,28,29,31,32,34,35];
-
-const result = binarySearchRecursive(32, values, 0, values.length, 0)
-console.log(result.found, result.index, result.iterations);

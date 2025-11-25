@@ -1,5 +1,6 @@
 import assert from "assert";
 import { binarySearch } from "./binarysearch.js";
+import binarySearchRecursive from "./binarysearch_recursive.js";
 
 describe("binarySearch", function () {
   
@@ -125,6 +126,10 @@ describe("binarySearch", function () {
     });
   
   });
-
-
 });
+
+
+const values = [21,22,23,25,27,28,29,31,32,34,35];
+
+const result = binarySearchRecursive(32, values, 0, values.length, 0)
+console.log(result.found, result.index, result.iterations);
